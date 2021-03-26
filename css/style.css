@@ -27,6 +27,7 @@ img {
 }
 
 .btn {
+	display: block;
 	padding: 20px;
 	color: #fff;
 	text-decoration: none;
@@ -34,6 +35,7 @@ img {
 }
 .btn-bl {
 	background-color: #03a9f4;
+	
 }
 .btn-ye {
 	background-color: #f79007;
@@ -44,11 +46,17 @@ img {
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 120%;
+	height: 100%;
+}
+@media (min-width: 768px) {
+	.site-header {
+		height: 100vh;
+	}
 }
 .barra {
 	text-align: center;
-	margin-bottom: 40px;
+	justify-content: center;
+	align-items: center;
 }
 @media (min-width: 768px) {
 	.barra {
@@ -57,9 +65,11 @@ img {
 	}
 }
 .logo {
-	padding: 40px;
+	padding-top: 20px;
 }
-
+.logo img {
+	height: 70%;
+}
 .enlaces a {
 	line-height: 40px;
 	display: block;
@@ -71,6 +81,7 @@ img {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding-top: 20px;
 	}
 
 	.enlaces a {
@@ -85,13 +96,14 @@ img {
 
 .contenido-header {
 	display: block;
+	margin-top: 40px;
 }
 .contenido-header img {
 	height: 200px;
 }
 @media (min-width: 768px) {
 	.imagen-header {
-		text-align: right;
+		text-align: left;
 	}
 }
 .texto-header span {
@@ -189,19 +201,17 @@ img {
 	}
 }
 
-#medidor{
+#medidor {
 	fill: red;
 }
 
-#engrane{
-	
+#engrane {
 	stroke: #03a9f4;
 	stroke-width: 1;
 	transform-origin: 50%;
-	transition: transform 1s ease  ;
-
+	transition: transform 1s ease;
 }
-#icono-engrane:hover #engrane{
+#icono-engrane:hover #engrane {
 	transform: rotate(180deg);
 }
 
@@ -213,12 +223,9 @@ svg {
 	margin-bottom: 10px;
 }
 
-
 .seccion-tres {
-
 	background-color: #f5f9fd;
 	text-align: center;
-
 }
 @media (min-width: 768px) {
 	.contenido-tres {
@@ -226,7 +233,6 @@ svg {
 		grid-template-columns: 1fr 1fr;
 		justify-content: center;
 		align-items: center;
-		
 	}
 }
 
@@ -258,8 +264,7 @@ svg {
 	}
 }
 .img img {
-	height: 60%;
-	width: 60%;
+	height: 50%;
 	text-align: center;
 	border-radius: 50%;
 }
@@ -334,8 +339,6 @@ svg {
 .formulario {
 	display: flex;
 	flex-direction: column;
-
-	
 }
 
 @media (min-width: 768px) {
@@ -431,7 +434,6 @@ svg {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
 }
 
 h1 {
