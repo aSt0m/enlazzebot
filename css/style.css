@@ -6,6 +6,11 @@ html {
 *:after {
 	box-sizing: inherit;
 }
+
+:root{
+	--color-negro: #fff;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #25292a;
@@ -29,23 +34,22 @@ img {
 .btn {
 	display: block;
 	padding: 20px;
-	color: #fff;
+	color: var(--color-negro);
 	text-decoration: none;
 	border-radius: 10px;
 }
 .btn-bl {
 	background-color: #03a9f4;
-	
 }
 .btn-ye {
 	background-color: #f79007;
 }
 
 .site-header {
-	background: linear-gradient(180deg, grey, #f1f1), url(../images/header.jpg);
-	background-position: center center;
+	background: linear-gradient(180deg, grey, #f1f1), url(../images/header.jpg), url(/images/fondo-tres.png);
+	background-position: right bottom, left top;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat, no-repeat;
 	height: 100%;
 }
 @media (min-width: 768px) {
@@ -75,6 +79,7 @@ img {
 	display: block;
 	color: #fff;
 	text-decoration: none;
+	transition: font-size 2s;
 }
 @media (min-width: 768px) {
 	.enlaces {
@@ -90,13 +95,13 @@ img {
 }
 
 .enlaces a:hover {
-	color: #033349;
-	font-size: 20px;
+	color: #b8d8e6;
+	text-decoration-line: underline;
 }
 
 .contenido-header {
 	display: block;
-	margin-top: 40px;
+	margin-top: 150px;
 }
 .contenido-header img {
 	height: 200px;
@@ -253,18 +258,12 @@ svg {
 	border-top: 1px solid rgb(221, 221, 221);
 	margin: 20px;
 	font-weight: 600;
-}
-@media (min-width: 768px) {
-	.imagenes {
-		display: flex;
-		justify-content: space-between;
-	}
-	.img {
-		flex-basis: calc(33% - 1px);
-	}
+	
+	
 }
 .img img {
-	height: 50%;
+
+	height: auto;
 	text-align: center;
 	border-radius: 50%;
 }
@@ -276,6 +275,16 @@ svg {
 	padding: 8px 2px;
 	text-transform: uppercase;
 }
+@media (min-width: 768px) {
+	.imagenes {
+		display: flex;
+		justify-content: space-between;
+	}
+	.img {
+		flex-basis: calc(33% - 1px);
+	}
+}
+
 
 .seccion-anuncios {
 	display: flex;
