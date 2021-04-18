@@ -26,7 +26,7 @@ img {
 }
 
 .contenedor {
-	max-width: 1000px;
+	max-width: 1100px;
 	width: 95%;
 	margin: 0 auto;
 }
@@ -46,7 +46,7 @@ img {
 }
 
 .site-header {
-	background: linear-gradient(180deg, grey, #f1f1), url(../images/header.jpg), url(/images/fondo-tres.png);
+	background: linear-gradient(180deg,#6d6d6d, #4445), url(../images/header.jpg), url(/images/fondo-tres.png);
 	background-position: right bottom, left top;
 	background-size: cover;
 	background-repeat: no-repeat, no-repeat;
@@ -75,11 +75,13 @@ img {
 	height: 70%;
 }
 .enlaces a {
+	font-size: 12px;
 	line-height: 40px;
 	display: block;
 	color: #fff;
+	font-weight: bold;
 	text-decoration: none;
-	transition: font-size 2s;
+	text-transform: uppercase;
 }
 @media (min-width: 768px) {
 	.enlaces {
@@ -88,7 +90,7 @@ img {
 		align-items: center;
 		padding-top: 20px;
 	}
-
+	
 	.enlaces a {
 		margin-right: 40px;
 	}
@@ -111,18 +113,19 @@ img {
 		text-align: left;
 	}
 }
-.texto-header span {
+.texto-header h1 {
 	color: #fff;
 	font-weight: 700;
 	font-size: 40px;
 }
 
 .texto-header p {
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 23px;
 	letter-spacing: 2px;
 	color: #fff;
 }
+
 @media (min-width: 768px) {
 	.contene {
 		display: grid;
@@ -206,9 +209,7 @@ img {
 	}
 }
 
-#medidor {
-	fill: red;
-}
+
 
 #engrane {
 	stroke: #03a9f4;
@@ -241,12 +242,14 @@ svg {
 	}
 }
 
-.texto h3 {
+.texto h3,
+.texto-2 h3 {
 	font-size: 34px;
 	font-weight: 200;
 	letter-spacing: 4px;
 }
-.texto p {
+.texto p,
+.texto-2 p {
 	font-size: 18px;
 	line-height: 26px;
 	font-weight: 100;
